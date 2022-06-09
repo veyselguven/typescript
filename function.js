@@ -14,7 +14,22 @@ var logUser = function (firstName, lastName) {
     console.log(firstName + " " + lastName);
 };
 logUser("Veysel", "Basbaydar");
+// optional params
 var logUser2 = function (firstName, lastName) {
     console.log(firstName + " " + lastName);
 };
 logUser2("Burhan");
+// default params
+var logUser3 = function (firstName, lastName) {
+    if (lastName === void 0) { lastName = "tarkocin"; }
+    console.log(firstName + " " + lastName);
+};
+logUser3("veysel");
+logUser3("veysel", "Guven");
+var logUser4 = function (color) {
+    console.log(color);
+};
+logUser4({
+    name: "black",
+    hex: "#000"
+});

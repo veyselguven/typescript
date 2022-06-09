@@ -18,8 +18,34 @@ const logUser = (firstName: string, lastName: string) => {
 };
 
 logUser("Veysel", "Basbaydar");
+
+// optional params
+
 const logUser2 = (firstName: string, lastName?: string) => {
   console.log(firstName + " " + lastName);
 };
 
 logUser2("Burhan");
+
+// default params
+const logUser3 = (firstName: string, lastName = "tarkocin") => {
+  console.log(firstName + " " + lastName);
+};
+
+logUser3("veysel");
+logUser3("veysel", "Guven");
+
+// literal,union veya custom ozellikleri burdada kullanabiliriz
+
+type Color = {
+  name: string;
+  hex: string;
+};
+const logUser4 = (color: Color) => {
+  console.log(color);
+};
+
+logUser4({
+  name: "black",
+  hex: "#000",
+});
