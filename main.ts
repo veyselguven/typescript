@@ -74,7 +74,7 @@ a = veysel; // burda a yi any e atayabilirim
 let notSure: unknown;
 //a=notSure // bunu atayamazsin error verir
 // cunku burda a nin type i belli burda type i belli olan bir elemana
-// unknown atanamaz
+// unknown atanamaz // unknown daha kati kurallari var
 notSure = "Didem";
 notSure = 44;
 notSure = false;
